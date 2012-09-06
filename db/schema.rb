@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120905225059) do
+ActiveRecord::Schema.define(:version => 20120906212213) do
+
+  create_table "artifacts", :force => true do |t|
+    t.string   "title"
+    t.string   "size"
+    t.string   "about"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "artists", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "aboutme"
+    t.string   "style"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "name"

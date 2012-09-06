@@ -1,4 +1,8 @@
 GalleryApp::Application.routes.draw do
+  get "artifacts/new"
+
+  get "artists/new"
+
   get "users/new"
 
   get "static_pages/home"
