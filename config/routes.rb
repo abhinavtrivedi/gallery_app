@@ -1,6 +1,14 @@
 GalleryApp::Application.routes.draw do
   get "artifacts/new"
 
+  get "artifacts/edit"
+
+  get "artifacts/delete"
+
+  get "artifacts/index"
+
+  get "artifacts/show"
+
   get "artists/new"
 
   get "users/new"
